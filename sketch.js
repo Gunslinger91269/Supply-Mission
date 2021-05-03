@@ -34,11 +34,13 @@ function setup() {
 	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.5, isStatic:true});
 	World.add(world, packageBody);
 	
-
+	
 
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
  	World.add(world, ground);
-
+	box1 = new box(width/2,600,100,10)
+	box2 = new box(width/2+50,550,10,100)
+	box3 = new box(width/2-50,550,10,100)
 
 	Engine.run(engine);
   
